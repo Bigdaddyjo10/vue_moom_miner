@@ -23,7 +23,6 @@ import { AppState } from './AppState'
   --main-height: calc(100vh - 32px - 64px);
 }
 
-
 footer {
   display: grid;
   place-content: center;
