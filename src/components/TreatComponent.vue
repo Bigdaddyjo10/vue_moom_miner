@@ -15,7 +15,7 @@ function purchaseTreat(treat){
         <div class="row">
           <div v-for="treat in treats" :key="treat.name" class="col-4">
             <div class="d-flex justify-content-around">
-              <button v-if="money >= treat.price" @click="purchaseTreat(treat)">{{ treat.name }} ${{ treat.price }}</button>
+              <button v-if="money < treat.price" @click="purchaseTreat(treat)">{{ treat.name }} ${{ treat.price }}</button>
             </div>
           </div>
         </div>

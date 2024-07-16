@@ -25,5 +25,7 @@ export const AppState = reactive({
       addAmount: 50
     })
   ],
-  money: 0
+  money: 0,
+  clickAmount: 1
+
 })
