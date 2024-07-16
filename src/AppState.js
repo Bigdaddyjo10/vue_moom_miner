@@ -1,5 +1,5 @@
 import { reactive } from 'vue'
-import { UpGrades } from './models/UpGrades.js'
+import { Treat } from './models/Treat.js'
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
@@ -7,22 +7,23 @@ export const AppState = reactive({
   identity: null,
   /** @type {import('./models/Account.js').Account} user info from the database*/
   account: null,
-  /** @type {UpGrades[]} UpGrades*/
-  upGrades: [
-    new UpGrades({
+  /** @type {Treat[]} Treats*/
+  treats: [
+    new Treat({
       name: 'Dog Treat',
       price: 10,
-      addAmount: 20
+      addAmount: 5
     }),
-    new UpGrades({
+    new Treat({
       name: 'Big Dog Treat',
       price: 50,
       addAmount: 25
     }),
-    new UpGrades({
+    new Treat({
       name: 'Bigger Dog Treat',
       price: 100,
       addAmount: 50
     })
-  ]
+  ],
+  money: 0
 })
